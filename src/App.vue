@@ -1,13 +1,16 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
+    <Login accType="email" acc="you@example.com" loginBtnTitle="登录"></Login>
     <router-view/>
   </div>
 </template>
 
 <script>
+import Login from './components/Login'
 export default {
-  name: 'App'
+  name: 'App',
+  components: {Login}
 }
 </script>
 
