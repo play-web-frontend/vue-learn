@@ -1,16 +1,17 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
-    <Login accType="email" acc="you@example.com" loginBtnTitle="登录"></Login>
+    <Home></Home>
     <router-view/>
   </div>
 </template>
 
 <script>
-import Login from './components/Login'
+// import Login from './components/Login'
+import Home from '@/components/Home'
 export default {
   name: 'App',
-  components: {Login}
+  components: {Home}
 }
 </script>
 
